@@ -1,0 +1,47 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Eat-Teh-Burgers!</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Waiting to be Devoured</h3>
+        <div class="card">
+            <div class="card-body">
+                {{!-- if not devoured, list here --}}
+                <ol id="undevoured">
+                    {{#each burgers }}
+                    {{#unless devoured}}
+                    <li>{{burger_name}}<button class="devour" data-id="{{id}}">Devour It!</button></li>
+                    {{/unless}}
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <h3>Burgers Devoured</h3>
+        <div class="card">
+            <div class="card-body">
+                {{!-- if devoured, list here --}}
+                <ol id="devoured">
+                    {{#each burgers }}
+                    {{#if devoured}}
+                    <li>{{burger_name}}<button class="undevour" data-id="{{id}}">Undevour It!</button></li>
+                    {{/if}}
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{!-- submit button --}}
+<form class="burger-form">
+    <textarea type="text" id="burger-name" name="burger_name" rows="3" cols="40"></textarea>
+    <br>
+    <input type="submit">
+</form>
+
+<div class="sub-text">Enter a burger you want to eat and submit!</div>

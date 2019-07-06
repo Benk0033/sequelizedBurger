@@ -1,0 +1,49 @@
+h1, h3, form, .sub-text {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    color: firebrick;
+}
+
+li {
+    color: firebrick;
+}
+
+h1.display-4 {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    height: 200px;
+}
+
+button {
+    margin: 10px;
+}
+
+div.jumbotron.jumbotron-fluid {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    background-image: url(../img/burgers.png);
+}
+
+.sub-text {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    padding-top: 0;
+}
+
+div.col-sm-6, body {
+    background-color: burlywood;
+}
+
+div.card-body {
+    background-color: bisque;
+}
