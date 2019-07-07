@@ -1,8 +1,8 @@
-# Eat-Teh-Burgers! (Node Express Handlebars)
+# Eat-Teh-Burgers! (Sequelize)
 
-Link to live application: https://infinite-gorge-67341.herokuapp.com/
+Link to live application: https://infinite-sierra-43088.herokuapp.com/
 
-This application is essentially a burger logger utilizing MySQL, Node, Express, Handlebars and a homemade ORM (yum!). It also follows the MVC design pattern.
+This application is essentially a burger logger utilizing MySQL, Node, Express, Handlebars and Sequelize (yum!). It also follows the MVC design pattern.
 
 * Eat-Teh-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
@@ -22,3 +22,5 @@ NPM Packages used;
 1. Express
 2. Mysql
 3. Express-Handlebars
+4. Sequelize
+5. mysql2

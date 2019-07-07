@@ -1,4 +1,6 @@
 'use strict';
+
+// Burger model definitions
 module.exports = (sequelize, DataTypes) => {
   const Burger = sequelize.define('Burger', {
     burger_name: DataTypes.STRING,
